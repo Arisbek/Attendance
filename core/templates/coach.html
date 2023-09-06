@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <body>
+        <h2>{{coach.name}}</h2>
+        <div>Описание: {{coach.description}}</div>
+        {% if coach.photo %}
+            <div>
+                <img src="{{coach.photo.url}}">
+            </div>
+        {% endif %}
+        <div>статус: {{coach.status}}</div>
+    </body>
+    {% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Абонементы:</h2>
+    {% for abonement in abonements %}
+        <a href="/abonement/{{abonement.id}}">
+            <div>
+                {{abonement.name}}
+            </div>
+        </a>
+    {% endfor %}
+
+{% endblock %}

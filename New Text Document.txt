@@ -1,0 +1,7 @@
+admin
+home (design) -> info about utilities, coaches and other stuff -> registration -> store + abonement
+store: categories
+languages: kg + ru
+
+training programme
+idea - number of people in real time

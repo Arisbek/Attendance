@@ -28,18 +28,10 @@
               <li class="nav-item">
                 <a class="nav-link" href="/">Главная</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/shorts">Shorts</a>
-              </li>
-              {% if request.user.is_authenticated %}
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'saved-posts' %}">SavedPosts</a>
-                </li>
-              {% endif %}
             </ul>
             <form class="d-flex">
-              <input class="form-control me-2" type="text" placeholder="Search">
-              <button class="btn btn-danger" type="button">Search</button>
+              <input class="form-control me-2" type="text" placeholder="Поиск">
+              <button class="btn btn-danger" type="button">Поиск</button>
             </form>
           </div>
         </div>

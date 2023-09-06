@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <body>
+        <h2>Тренеры:</h2>
+        {% for coach in coaches %}
+            <a href = '/coach/{{coach.id}}'>
+                {{coach.name}}
+            </a>
+            {% if coach.photo %}
+                <div>
+                    <img src="{{ coach.photo.url }}">
+                </div>
+            {% endif %}
+            <p>
+                Лайки: {{ coach.likes }}
+            </p>
+            <hr>
+        {% endfor %}
+        <div><a href="/home">homepage</a></div>
+    </body>
+    {% endblock %}
